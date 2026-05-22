@@ -16,7 +16,9 @@ public:
 		this->cols=c;
 		this->data=new int*[r];
 		for(int i=0; i<r; i++)
-			this->data[i]=new int[c](0);
+		{
+			this->data[i] = new int[c]();
+		}
 	};
 	~Matrix() {
 		for(int i=0; i<this->rows; i++)
