@@ -27,26 +27,26 @@ class SensorTracker {
 		}
 };
 
-int main() {
-	std::cout << "Sensor Tracker" << std::endl;
-
-	SensorTracker<double> tracker;
-	tracker.addReading("08:00", 22.5);
-	tracker.addReading("09:00", 23.1);
-	tracker.addReading("10:00", 24.0);
-
-	tracker.displayReadings();
-	std::cout << "Average Temperature: " << tracker.calculateAverage() << std::endl << std::endl;
-
-	SensorTracker<int> emptyTracker;
-	std::cout << "--- Testing Empty Tracker ---" << std::endl;
-
-	try {
-		std::cout << emptyTracker.calculateAverage() << std::endl;
-	}
-	catch (const std::exception& e) {
-		std::cout << "Error caught: " << e.what() << std::endl;
-	}
-
-	return 0;
-}
+//int main() {
+//	std::cout << "Sensor Tracker" << std::endl;
+//
+//	SensorTracker<double> tracker;
+//	tracker.addReading("08:00", 22.5);
+//	tracker.addReading("09:00", 23.1);
+//	tracker.addReading("10:00", 24.0);
+//
+//	tracker.displayReadings();
+//	std::cout << "Average Temperature: " << tracker.calculateAverage() << std::endl << std::endl;
+//
+//	SensorTracker<int> emptyTracker;
+//	std::cout << "--- Testing Empty Tracker ---" << std::endl;
+//
+//	try {
+//		std::cout << emptyTracker.calculateAverage() << std::endl;
+//	}
+//	catch (const std::exception& e) {
+//		std::cout << "Error caught: " << e.what() << std::endl;
+//	}
+//
+//	return 0;
+//}

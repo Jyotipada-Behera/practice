@@ -140,6 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\cpp1.cpp" />
+    <ClCompile Include="src\cpp2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\cpp1_q.txt" />
+    <Text Include="src\cpp2_q .txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

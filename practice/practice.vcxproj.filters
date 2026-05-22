@@ -18,5 +18,12 @@
     <ClCompile Include="src\cpp1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\cpp2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\cpp1_q.txt" />
+    <Text Include="src\cpp2_q .txt" />
   </ItemGroup>
 </Project>
