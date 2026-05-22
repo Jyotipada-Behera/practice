@@ -34,7 +34,7 @@ public:
 		this->data[r][c]=value;
 	};
 	void display() const {
-		std::cout << "--- Matrix (3x3) ---" << std::endl;
+		std::cout << "--- Matrix (" << this->rows << "x" << this->cols << ") ---" << std::endl;
 		for (int i = 0; i < this->rows; i++) {
 			for (int j = 0; j < this->cols; j++)
 				std::cout << this->data[i][j] << " ";
