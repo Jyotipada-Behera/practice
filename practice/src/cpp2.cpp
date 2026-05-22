@@ -26,21 +26,11 @@ public:
 		delete[] this->data;
 	};
 	int getValue(int r, int c) const {
-		try {
-			this->checkBounds(r, c);
-		} catch (const std::out_of_range& e) {
-			std::cout << "Exception caught: " << e.what() << std::endl;
-			return -1;
-		}
+		this->checkBounds(r, c);
 		return this->data[r][c];
 	};
 	void setValue(int r, int c, int value) {
-		try {
-			this->checkBounds(r, c);
-		} catch (const std::out_of_range& e) {
-			std::cout << "Exception caught: " << e.what() << std::endl;
-			return;
-		}
+		this->checkBounds(r, c);
 		this->data[r][c]=value;
 	};
 	void display() const {
@@ -65,7 +55,12 @@ int main() {
 	mat.display();
 
 	std::cout << "--- Testing Bounds ---" << std::endl;
-	mat.setValue(5, 0, 10); // Out of bounds
+	try {
+		mat.setValue(5, 0, 10);
+	}
+	catch (const std::out_of_range& e) {
+		std::cout << "Exception caught: " << e.what() << std::endl;
+	}
 
 	return 0;
 }
