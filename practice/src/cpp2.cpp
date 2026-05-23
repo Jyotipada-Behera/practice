@@ -43,24 +43,24 @@ public:
 	};
 };
 
-int main() {
-	std::cout << "--- Lightweight matrix math library ---" << std::endl;
-
-	// Create a 3x3 matrix
-	Matrix mat(3, 3);
-	for (int i = 0; i < 3; i++)
-		for (int j = 0; j < 3; j++)
-			mat.setValue(i, j, i * j);
-
-	mat.display();
-
-	std::cout << "--- Testing Bounds ---" << std::endl;
-	try {
-		mat.setValue(5, 0, 10);
-	}
-	catch (const std::out_of_range& e) {
-		std::cout << "Exception caught: " << e.what() << std::endl;
-	}
-
-	return 0;
-}
+//int main() {
+//	std::cout << "--- Lightweight matrix math library ---" << std::endl;
+//
+//	// Create a 3x3 matrix
+//	Matrix mat(3, 3);
+//	for (int i = 0; i < 3; i++)
+//		for (int j = 0; j < 3; j++)
+//			mat.setValue(i, j, i * j);
+//
+//	mat.display();
+//
+//	std::cout << "--- Testing Bounds ---" << std::endl;
+//	try {
+//		mat.setValue(5, 0, 10);
+//	}
+//	catch (const std::out_of_range& e) {
+//		std::cout << "Exception caught: " << e.what() << std::endl;
+//	}
+//
+//	return 0;
+//}
