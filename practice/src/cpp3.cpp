@@ -58,29 +58,29 @@ public:
 	}
 };
 
-int main() {
-	LinkedList<int> list;
-	list.push_front(10);
-	list.push_front(20);
-	list.push_front(30);
-
-	std::cout << "--- Initial List ---" << std::endl;
-	list.display();
-
-	std::cout << "--- Reversed List ---" << std::endl;
-	list.reverse();
-	list.display();
-
-	std::cout << "--- Testing Pop ---" << std::endl;
-	while (true) {
-		try {
-			list.pop_front();
-		}
-		catch (const std::underflow_error& e) {
-			std::cout << "Popped all items." << std::endl;
-			std::cout << "Exception caught: " << e.what() << std::endl;
-			break;
-		}
-		list.display();
-	}
-}
+//int main() {
+//	LinkedList<int> list;
+//	list.push_front(10);
+//	list.push_front(20);
+//	list.push_front(30);
+//
+//	std::cout << "--- Initial List ---" << std::endl;
+//	list.display();
+//
+//	std::cout << "--- Reversed List ---" << std::endl;
+//	list.reverse();
+//	list.display();
+//
+//	std::cout << "--- Testing Pop ---" << std::endl;
+//	while (true) {
+//		try {
+//			list.pop_front();
+//		}
+//		catch (const std::underflow_error& e) {
+//			std::cout << "Popped all items." << std::endl;
+//			std::cout << "Exception caught: " << e.what() << std::endl;
+//			break;
+//		}
+//		list.display();
+//	}
+//}

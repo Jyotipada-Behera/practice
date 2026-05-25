@@ -142,6 +142,7 @@
     <ClCompile Include="src\cpp1.cpp" />
     <ClCompile Include="src\cpp2.cpp" />
     <ClCompile Include="src\cpp3.cpp" />
+    <ClCompile Include="src\cpp4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="src\cpp1_q.txt" />
