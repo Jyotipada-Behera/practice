@@ -54,22 +54,22 @@ public:
 	}
 };
 
-int main() {
-	std::vector<Entity*> entities;
-	entities.push_back(new Player("Hero", 0.0f, 0.0f, 10));
-	entities.push_back(new Enemy("Goblin", 5.0f, 5.0f, 15));
-	entities.push_back(new Enemy("Orc", 10.0f, 10.0f, 20));
-
-	std::cout << "--- Game Engine Start ---" << std::endl;
-	for (Entity* entity : entities) {
-		entity->update();
-		entity->interact();
-	}
-
-	std::cout << "\n--- Game Engine Shutdown ---" << std::endl;
-	for (Entity* entity : entities) {
-		delete entity;
-	}
-
-	return 0;
-}
+//int main() {
+//	std::vector<Entity*> entities;
+//	entities.push_back(new Player("Hero", 0.0f, 0.0f, 10));
+//	entities.push_back(new Enemy("Goblin", 5.0f, 5.0f, 15));
+//	entities.push_back(new Enemy("Orc", 10.0f, 10.0f, 20));
+//
+//	std::cout << "--- Game Engine Start ---" << std::endl;
+//	for (Entity* entity : entities) {
+//		entity->update();
+//		entity->interact();
+//	}
+//
+//	std::cout << "\n--- Game Engine Shutdown ---" << std::endl;
+//	for (Entity* entity : entities) {
+//		delete entity;
+//	}
+//
+//	return 0;
+//}
